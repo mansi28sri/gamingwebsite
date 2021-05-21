@@ -1,0 +1,191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 May, 2021, 4:50:35 PM
+    Author     : mansi
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#banner {
+    background: url(image/maths.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 120px;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+.bannertext {
+    text-align: center;
+    color: black;
+    padding-top: 180px;
+}
+
+.bannertext h1 {
+    font-size: 130px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.bannertext p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.bannerbtn {
+    margin: 70px auto 0;
+}
+
+.bannerbtn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: rgb(0, 0, 0);
+    border: .5px solid rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.bannerbtn a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.bannerbtn a:hover span {
+    width: 100%;
+}
+
+.bannerbtn a:hover {
+    color: white;
+}
+
+
+#feature {
+    width: 100%;
+    padding: 20px 0;
+}
+.titletext {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.titletext p {
+    margin: auto;
+    margin-top: 5%;
+    font-size: 50px;
+    color: brown;
+    font-family: 'Luckiest Guy', cursive;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.descriptionbox {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+#operations {
+    width: 100%;
+    padding: 70px 0;
+    background: oldlace;
+}
+.operationbox {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single_operation {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: white;
+}
+.single_operation h2 {
+    margin: auto;
+    margin-top: 5%;
+    font-size: 50px;
+    color: brown;
+    font-family: 'Luckiest Guy', cursive;
+}
+.single_operation add {
+    width: 100%;
+    margin-left: 10%;
+    border-radius: 7px;
+    padding: 3px;
+}
+.single_operation sub {
+    width: 100%;
+    border-radius: 7px;
+    padding: 3px;
+}
+.single_operation divide {
+    width: 100%;
+    border-radius: 7px;
+    padding: 3px;
+}
+.single_operation multiply {
+    width: 100%;
+    border-radius: 7px;
+    padding: 3px;
+}
+@media(max-width:768px) {
+    .nav h2 {
+        font-size: 1.5rem;
+        float: none;
+        text-align: center;
+    }
+    
+    nav {
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav li {
+        font-size: 1rem;
+    }
+}
+@media(max-width:480px) {
+    .nav h2 {
+        float: none;
+        text-align: center;
+    }
+    
+    .equation h1 {
+        display: inline;
+        padding: 10px;
+    }
+    
+    nav li {
+        font-size: .8rem;
+    }
+}
+

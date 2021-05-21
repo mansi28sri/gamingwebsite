@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> home Page </title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    setTimeout(() => {
+        alert('you spend 50 minutes on gaming please take a break  ')
+    }, 3000000)
+</script>
+</head>
+
+<body>
+
+
+
+
+    <!--top navigaton bar-->
+    <div class="bg-div">
+        <div class="topnav" id="myTopnav">
+            <a href="https://www.google.com/"><b>Quit</b></a>
+
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+
+        <!--side navigation bar-->
+
+        <div class="sidenav">
+            <img class="logo-img" src=" image/logo.jpg" width="100" height="80" ALT="align box" ALIGN=CENTER>
+            <h1> CHOOSE SUBJECT</h1>
+            <button class="dropdown-btn"><b>English</b>
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-container">
+                <a href="intro.html">Jumble Words</a>
+                
+            </div>
+            <button class="dropdown-btn"><b>Maths</b>
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-container">
+                <a href="intro_1.html">Math pop</a>
+                <a href="ins2048.html">2048 Game </a>
+                
+                
+            </div>
+            <button class="dropdown-btn"><b>Memory</b>
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-container">
+                <a href="ins.html">Memory Game</a>
+                
+            </div>
+
+        </div>
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+
+        <!--image slide show-->
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="image/homeimg42.png" width="1000" height="600">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src=" image/homeimg43.gif" width="1000" height="600">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="image/homeimg44.jpg" width="1000" height="600">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        </section>
+
+</body>
+
+</html>
+
+

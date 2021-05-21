@@ -1,0 +1,193 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 May, 2021, 4:27:31 PM
+    Author     : mansi
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #E6E6EA;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+header {
+    background: orangered;
+}
+
+.nav {
+    overflow: hidden;
+    background: orangered;
+    color: black;
+    padding: 20px 0;
+}
+
+.nav h2 {
+    font-size: 2rem;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    font-size: 1.3rem;
+    margin-top: 5px;
+    float: left;
+    padding: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav button {
+    font-size: 200%;
+    margin-top: 3px;
+    font-family: 'Luckiest Guy', cursive;
+    float: left;
+    padding: 0 15px;
+    color: rgb(0, 0, 0);
+    background: red;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+}
+
+.current a::after {
+    content: '-';
+    font-size: 4px;
+    background-color: white;
+    display: block;
+}
+
+.current button::after {
+    content: '-';
+    font-size: 4px;
+    background-color: white;
+    display: block;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 82% 18%;
+}
+
+.equation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+    font-size: 5.2vw;
+    background: black;
+    border-radius: 3px;
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+}
+
+.equation h1 {
+    display: inline;
+    padding: 20px;
+}
+
+.answer-options {
+    font-size: 5.2vw;
+    margin-right: 10px;
+}
+
+#option1 {
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #FE4A49;
+    color: #fff;
+    transition: 1s;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+}
+
+#option1:hover {
+    color: #FE4A49;
+    background: #fff;
+}
+
+#option2 {
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #2AB7CA;
+    color: #fff;
+    transition: 1s;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+}
+
+#option2:hover {
+    color: #2AB7CA;
+    background: white;
+}
+
+#option3 {
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #FED766;
+    color: white;
+    transition: 1s;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+}
+
+#option3:hover {
+    color: #FED766;
+    background: white;
+}
+
+@media(max-width:768px) {
+    .nav h2 {
+        font-size: 1.5rem;
+        float: none;
+        text-align: center;
+    }
+    nav {
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    nav li {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:480px) {
+    .nav h2 {
+        float: none;
+        text-align: center;
+    }
+    .equation h1 {
+        display: inline;
+        padding: 10px;
+    }
+    nav li {
+        font-size: .8rem;
+    }
+}
+

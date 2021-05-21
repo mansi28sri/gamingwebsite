@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>instruction page</title>
+</head>
+<style>
+    body {
+        background-image: url("image/imgs2048.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: inherit;
+    }
+    
+    h1 {
+        font-weight: 900px;
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+    
+    .active {
+        background-color: #4CAF50;
+        border-radius: 7px;
+    }
+    
+    .button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+    }
+    
+    .button2:hover {
+        box-shadow: 0 12px 16px 0 rgba(182, 181, 181, 0.24), 0 17px 50px 0 rgba(182, 181, 181, 0.24);
+    }
+</style>
+
+<body>
+    <ul>
+
+
+        <li style="float:right"><a class="active" href="#subjectmenu">Quit</a></li>
+    </ul>
+    <marquee>
+        <font size="9" weight="700px" color="cyan">
+            <b>  INSTRUCTIONS</b>
+        </font>
+    </marquee>
+    <br>
+
+    <br>
+    <font size="5" weight="900px" color="white">
+        <center>
+            <b>
+            <P>1.You need to move the tiles in up-down,left-right.</P>
+            <br>
+            <p>2.Each time you move a tile a new tile will pop up.</p>
+            <br>
+            <p>
+                3.When two tiles with the same number on them collide with one another as you
+                <br> move them, they will merge into one tile with the sum of the numbers written on them initially.
+            </p>
+            <br>
+            <p>4. As much as tiles merge that will add up in you score.</p>
+            <br>
+            <p>5.The game will get over when the block get filled with tiles</p>
+        </b>
+        </center>
+    </font>
+    <center>
+        <a href="submenu.html"> <button class="button button2">BACK</button></a>
+        <a href="index2048.html"> <button class="button button2" href="index2048.html">PLAY</button></a>
+    </center>
+</body>
+
+</html>
+

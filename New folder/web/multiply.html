@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style_1.css">
+    <title>Multiply</title>
+    <script>
+    setTimeout(() => {
+        alert('you spend 10 minutes on this game please take a break  ')
+    }, 600000)
+</script>
+</head>
+
+<body>
+
+    <audio id="myAudio">
+    <source src="image/wrong.mp3" type="audio/mpeg">
+  </audio>
+
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h2><span><i class="fa fa-trophy" aria-hidden="true"></i></span> MATH POP</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index_1.html">Add</a></li>
+                        <li><a href="subtract.html">Subtract</a></li>
+                        <li class="current"><a href="multiply.html">Multiply</a></li>
+                        <li><a href="divide.html">Divide</a></li>
+                        <button><a href="submenu.html">QUIT</a></button>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="equation">
+            <h1 id="num1" style="color:#FE4A49"></h1>
+            <h1 style="color: #2AB7CA">*</h1>
+            <h1 id="num2" style="color: #FED766">1</h1>
+            <h1 style="color: #F86624">=</h1>
+            <h1 style="color: gray">?</h1>
+        </div>
+        <div class="answer-options">
+            <h1 id="option1">1</h1>
+            <h1 id="option2">2</h1>
+            <h1 id="option3">3</h1>
+        </div>
+    </div>
+
+    <script src="multiply.js"></script>
+</body>
+
+</html>
+
+
